@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ES">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Formulario de Registro </title>
+    </head>
+    <body>
+        <form>
+            <fieldset>
+                <legend><h2> Formulario de Registro </h2></legend>
+                <br>
+                <div>
+                    <label for="primerNombre"><strong> Primer Nombre: </strong></label>
+                    <input type="text" id="primerNombre" name="primerNombre" placeholder="Escribe tu primer nombre">
+                </div>
+                <br>
+                <div>
+                    <label for="primerApellido"><strong> Primer Apellido: </strong></label>
+                    <input type="text" id="primerApellido" name="primerApellido" placeholder="Escribe tu primer apeliido">
+                </div>
+                <br>
+                <div>
+                    <label for="correoEmail"><strong> Dirección Email: </strong></label>
+                    <input type="email" id="correoEmail" name="correoEmail" placeholder="Escribe tu email">
+                </div>
+                <br>
+                <div>
+                    <label for="contraseña"><strong> Contraseña: </strong></label>
+                    <input type="password" id="contraseña" name="contraseña" placeholder="Escribe tu contraseña">
+                </div>
+                <br>
+                <div>
+                    <label for="confirmaContraseña"><strong> Confirmar Contraseña: * </strong></label>
+                    <input type="password" id="confirmaContraseña" name="confirmaContraseña" placeholder="Y confirma tu contraseña">
+                </div>
+                <br>
+                <div>
+                    <label for="fechaNacimiento"><strong>Fecha de Nacimiento:</strong></label>
+                    <input type="date" id="fechaNacimiento" name="fechaNacimiento">
+                </div>
+                <div>
+                    <h4> Genero: </h4>
+                    <input type="radio" id="masculino" name="genero" value="Masculino">
+                    <label for="masculino"> Masculino </label>
+                    <input type="radio" id="femenino" name="genero" value="Femenino">
+                    <label for="femenino"> Femenino </label>
+                    <input type="radio" id="noBinario" name="genero" value="No Binario">
+                    <label for="noBinario"> No Binario</label>
+                    <input type="radio" id="noResponde" name="genero" value="Prefiero no responder">
+                    <label for="noResponde"> Prefiero no responder </label>
+                </div>
+                <br>
+                <div>
+                    <label for="about"><strong> Una breve descripción sobre mí: </strong></label>
+                    <br><br>
+                    <textarea id="about" name="about" placeholder="Describe sobre ti"></textarea>
+                </div>
+                <br>
+                <div>
+                    <label for="lenguaje"><strong> Lenguaje favorito: </strong></label>
+                    <select id="lenguaje" name="lenguaje">
+                        <option> JavaScript </option>
+                        <option> CSharp </option>
+                        <option> Python </option>
+                        <option> HTML </option>
+                        <option> CSS </option>
+                        <option> Java </option>
+                        <option> SQL </option>
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <input type="checkbox" id="checheoActualizaciones" name="checheoActualizaciones" value="checheoActualizaciones" checked="checked">
+                    <label for="checheoActualizaciones"><strong> Sí, deseo recibir actualizaciones periódicas por correo electrónico </strong></label>
+                </div>
+                <br>
+                <input type="submit" id="creaCuenta" name="creaCuenta" value="Crear Cuenta">
+                <br><br>
+                <span> * Indica un campo obligatorio </span>
+                <br><br>
+            </fieldset>
+        </form>
+    </body>
+</html>
